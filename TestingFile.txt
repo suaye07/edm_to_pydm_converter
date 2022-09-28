@@ -1,0 +1,156 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 3
+y 53
+w 1000
+h 750
+font "helvetica-medium-r-21.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 30
+textColor index 14
+ctlFgColor1 index 63
+ctlFgColor2 index 86
+ctlBgColor1 index 30
+ctlBgColor2 index 14
+topShadowColor index 30
+botShadowColor index 14
+title "My First edm page$(ok) (not a macro)"
+showGrid
+gridSize 46
+orthoLineDraw
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 564
+y 191
+w 129
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 30
+value {
+  "Qlabel (not macro)in $(macro) Pydm$(anothermacro)"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 305
+y 209
+w 196
+h 56
+controlPv "PVFORTEXTUPDATE"
+fgColor index 63
+fgAlarm
+bgColor index 30
+fill
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 510
+y 305
+w 253
+h 30
+controlPv "PV:FOR:TEXT:CONTROL"
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 30
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 86
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 214
+y 38
+w 347
+h 127
+font "helvetica-bold-i-24.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 30
+useDisplayBg
+border
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 484
+y 354
+w 225
+h 63
+controlPv "PV:TU:TESTING"
+fgColor index 45
+fgAlarm
+bgColor index 30
+fill
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 413
+y 451
+w 345
+h 76
+controlPv "PV $(macro)testing (not macro)$(macro)"
+fgColor index 78
+fgAlarm
+bgColor index 30
+fill
+font "helvetica-medium-r-18.0"
+lineWidth 11
+endObjectProperties
+
+# (Shell Command)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 479
+y 123
+w 154
+h 42
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 30
+endObjectProperties
